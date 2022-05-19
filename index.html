@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Equipos Del Mundo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="Assets/icon.png" />
+    <script
+      src="https://kit.fontawesome.com/6bed6d1fb8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="contNombre">
+      <p>Bienvenido <span id="mostrarNombre"></span></p>
+      <div class="editNombre">
+        <button onclick="editarNombre()">Editar</button>
+        <button onclick="eliminarNombre()">Eliminar nombre</button>
+      </div>
+    </div>
+    <h1>EQUIPOS DEL MUNDO</h1>
+    <div class="buscador">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input
+        id="formulario"
+        placeholder="Escribe el nombre del equipo"
+        type="text"
+      />
+      <button id="btnBuscar" class="buscarBtn">Buscar</button>
+    </div>
+    <div class="tabla">
+      <table class="tablaPrin">
+        <tr class="items">
+          <th>
+            Nombre
+            <hr class="sep" />
+          </th>
+          <th>
+            # Títulos
+            <hr class="sep" />
+          </th>
+          <th>
+            Liga / País
+            <hr class="sep" />
+          </th>
+          <th>
+            Año de fundación
+            <hr class="sep" />
+          </th>
+          <th>
+            Escudo
+            <hr class="sep" />
+          </th>
+        </tr>
+        <tr class="team">
+          <td data-label="Nombre">Barcelona</td>
+          <td data-label="# Títulos">546</td>
+          <td data-label="País">España</td>
+          <td data-label="Año de fundación">1846</td>
+          <td data-label="Escudo">Celda5</td>
+        </tr>
+        <tr class="team">
+          <td data-label="Nombre">Liverpool</td>
+          <td data-label="#Títulos">164</td>
+          <td data-label="País">Inglaterra</td>
+          <td data-label="Año de fundación">1975</td>
+          <td data-label="Escudo">Celda5</td>
+        </tr>
+        <tr class="team">
+          <td data-label="Nombre">Manchester city</td>
+          <td data-label="#Títulos">345</td>
+          <td data-label="País">Inglaterra</td>
+          <td data-label="Año de fundación">1862</td>
+          <td data-label="Escudo">Celda5</td>
+        </tr>
+        <tr class="team">
+          <td data-label="Nombre">Manchester United</td>
+          <td data-label="#Títulos">123</td>
+          <td data-label="País">Inglaterra</td>
+          <td data-label="Año de fundación">1945</td>
+          <td data-label="Escudo">Celda5</td>
+        </tr>
+        <tr class="team">
+          <td data-label="Nombre">Arsenal</td>
+          <td data-label="#Títulos">344</td>
+          <td data-label="País">Inglaterra</td>
+          <td data-label="Año de fundación">1865</td>
+          <td data-label="Escudo">Celda5</td>
+        </tr>
+        <tr class="team">
+          <td data-label="Nombre">Sevilla</td>
+          <td data-label="#Títulos">543</td>
+          <td data-label="País">España</td>
+          <td data-label="Año de fundación">1976</td>
+          <td data-label="Escudo">Celda5</td>
+        </tr>
+        <tr class="team">
+          <td data-label="Nombre">Villareal</td>
+          <td data-label="#Títulos">234</td>
+          <td data-label="País">España</td>
+          <td data-label="Año de fundación">1975</td>
+          <td data-label="Escudo">Celda5</td>
+        </tr>
+        <tr class="team">
+          <td data-label="Nombre">Chelsea</td>
+          <td data-label="#Títulos">123</td>
+          <td data-label="País">Inglaterra</td>
+          <td data-label="Año de fundación">1963</td>
+          <td data-label="Escudo">Celda5</td>
+        </tr>
+        <tr class="team">
+          <td data-label="Nombre">Bayern Munich</td>
+          <td data-label="#Títulos">234</td>
+          <td data-label="País">Alemania</td>
+          <td data-label="Año de fundación">1745</td>
+          <td data-label="Escudo">Celda5</td>
+        </tr>
+        <tr class="team">
+          <td data-label="Nombre">PSG</td>
+          <td data-label="#Títulos">566</td>
+          <td data-label="País">Francia</td>
+          <td data-label="Año de fundación">2005</td>
+          <td data-label="Escudo">Celda5</td>
+        </tr>
+        <tr class="team">
+          <td data-label="Nombre">Monaco</td>
+          <td data-label="#Títulos">187</td>
+          <td data-label="País">Francia</td>
+          <td data-label="Año de fundación">1968</td>
+          <td data-label="Escudo">Celda5</td>
+        </tr>
+        <tr class="team">
+          <td data-label="Nombre">Frankfurt</td>
+          <td data-label="#Títulos">234</td>
+          <td data-label="País">Alemania</td>
+          <td data-label="Año de fundación">1950</td>
+          <td data-label="Escudo">Celda5</td>
+        </tr>
+        <tr class="team">
+          <td data-label="Nombre">Porto</td>
+          <td data-label="#Títulos">123</td>
+          <td data-label="País">Portugal</td>
+          <td data-label="Año de fundación">1765</td>
+          <td data-label="Escudo">Celda5</td>
+        </tr>
+        <tr class="team">
+          <td data-label="Nombre">Rangers</td>
+          <td data-label="#Títulos">123</td>
+          <td data-label="País">Escocia</td>
+          <td data-label="Año de fundación">1860</td>
+          <td data-label="Escudo">Celda5</td>
+        </tr>
+        <tr class="team">
+          <td data-label="Nombre">West ham</td>
+          <td data-label="#Títulos">567</td>
+          <td data-label="País">Inglaterra</td>
+          <td data-label="Año de fundación">2000</td>
+          <td data-label="Escudo">Celda5</td>
+        </tr>
+        <tr class="team">
+          <td data-label="Nombre">Atalanta</td>
+          <td data-label="#Títulos">742</td>
+          <td data-label="País">Italia</td>
+          <td data-label="Año de fundación">1876</td>
+          <td data-label="Escudo">Celda5</td>
+        </tr>
+        <tr class="team">
+          <td data-label="Nombre">Lyon</td>
+          <td data-label="#Títulos">687</td>
+          <td data-label="País">Francia</td>
+          <td data-label="Año de fundación">1975</td>
+          <td data-label="Escudo">Celda5</td>
+        </tr>
+        <tr class="team">
+          <td data-label="Nombre">Galatasaray</td>
+          <td data-label="#Títulos">123</td>
+          <td data-label="País">Turquía</td>
+          <td data-label="Año de fundación">1987</td>
+          <td data-label="Escudo">Celda5</td>
+        </tr>
+      </table>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
